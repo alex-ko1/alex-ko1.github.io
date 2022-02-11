@@ -1,0 +1,41 @@
+.contacts {
+    background-color: #3498DB;
+    .contacts-wrapper {
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 70px 40px 95px;
+        color: #fff;
+        @media (max-width: 1220px) {}
+        @media (max-width: 767px) {
+            display: block;
+            column-count: 2;
+            padding: 30px 0;
+            align-items: baseline;
+        }
+        i {
+            font-size: 50px;
+        }
+        h3 {
+            font-size: 16px;
+            margin: 0;
+            padding: 20px 0 0 1px;
+        }
+        p {
+            margin: 5px 0 0 2px;
+            font-size: 14px;
+            font-weight: lighter;
+            @media (max-width: 768px) {
+                margin-bottom: 20px;
+                font-size: 12px;
+            }
+            a {
+                text-decoration: none;
+                color: #fff;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

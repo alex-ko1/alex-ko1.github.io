@@ -1,0 +1,131 @@
+.sign_up {
+    padding-top: 87px;
+    background-color: #F7F7F7;
+    .sign__up {
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+        @media (max-width: 1220px) {}
+        @media(max-width: 767px) {
+            flex-direction: column;
+        }
+        .inf_about_course {
+            text-align: center;
+            h1 {
+                margin-top: 213px;
+                margin-bottom: 26px;
+                font-size: 33px;
+                @media (max-width: 1220px) {
+                    margin-top: 90px;
+                    font-size: 28px;
+                    margin-bottom: 18px;
+                }
+                @media (max-width:767px) {
+                    margin-top: 30px;
+                }
+            }
+            p {
+                margin: 0 65px 0 55px;
+                font-weight: lighter;
+                font-size: 18px;
+                line-height: 32px;
+                color: #666;
+                @media (max-width: 1220px) {
+                    margin: 0 15px 0 20px;
+                    font-size: 18px;
+                }
+                @media (max-width: 767px) {
+                    margin: 0 55px 0 55px;
+                    line-height: 25px;
+                }
+                @media (max-width:480px) {
+                    margin: 22px;
+                }
+            }
+        }
+    }
+    .sign__up1 {
+        margin-top: 58px;
+        label {
+            font-size: 14px;
+            display: inline-block;
+        }
+        label::after {
+            background-size: 7px 7px;
+            background-repeat: no-repeat;
+            margin-left: 1px;
+            background-image: url(../img/icons/required.png);
+            content: "";
+            display: inline-block;
+            line-height: 1;
+            height: 7px;
+            width: 10px;
+        }
+        input {
+            content: "";
+            width: 578px;
+            height: 48px;
+            margin: 5px 0 7px 0;
+            border-width: 1px;
+            border-color: #666;
+            border-radius: 5px;
+            padding-left: 8px;
+            text-indent: 7px;
+            @media (max-width: 1220px) {
+                width: 100%;
+            }
+            &:focus-within {
+                border-color: rgb(0, 174, 255);
+                box-shadow: 0 0 10px rgb(0, 174, 255);
+            }
+            &:focus-visible {
+                outline: 0px;
+            }
+            .submit {
+                width: 300px;
+            }
+            &.checkbox {
+                width: 14px;
+                height: 14px;
+                margin: 15px 5px 15px 0;
+            }
+            &.submit {
+                padding: 0;
+                border: none;
+                font: inherit;
+                color: inherit;
+                background-color: transparent;
+                cursor: pointer;
+                padding: 0 17px;
+                margin-right: -4px;
+                width: auto;
+            }
+            &.submit {
+                background: #337AB7;
+                box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+                transition: .3s;
+                line-height: 40px;
+                border-radius: 45px;
+                text-align: center;
+                color: #fff;
+                white-space: nowrap;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 23px;
+                padding: 0 80px;
+                margin-bottom: 33px;
+                @media (max-width: 400px) {
+                    padding: 0 40px;
+                }
+            }
+        }
+        .divSubmit {
+            display: flex;
+        }
+        p {
+            font-size: 22px;
+            font-weight: 500;
+            margin: 0 0 10px 0;
+        }
+    }
+}
